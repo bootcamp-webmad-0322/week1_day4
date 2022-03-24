@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Simple string
+        const name = 'German'
+
+
+        // Backticks tring
+        const sentence = `Me llamo ${name}`
+        const sentence2 = `El resultado es ${10 / 2}`
+
+        let customer = { firstName: 'Foo', lastName: 'Kim' };
+        let message = `Hello ${customer.firstName} ${customer.lastName}!!`;
+        console.log(message)
+
+
+        // String length porperty
+        let lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eos nam quis unde a odit, iste veniam, voluptatem officia minus sunt delectus. Expedita suscipit corrupti voluptatibus voluptatum nemo neque molestiae.'
+        console.log('El lorem tiene', lorem.length, 'caracteres')
+
+
+        // String .charAt() method
+        const greeting = 'Hello there!';
+        console.log(greeting.charAt(0)); // <== H
+        console.log(greeting.charAt(1)); // <== e
+        console.log(greeting.charAt(5)); // <== " "
+        console.log(greeting.charAt(11)); // <== !
+        console.log(greeting.charAt(12)); // <== "" as an empty string
+
+
+        // String .indexOf() method
+        const message2 = "Don't be sad, be happy!";
+        console.log(message2.indexOf("Don't")); // <== 0
+        console.log(message2.indexOf('t')); // <== 4
+        console.log(message2.indexOf('popino')); // <== -1
+
+
+        // String .substring() method
+        const message3 = "Don't be sad, be happy!";
+        let withSubstring = message3.substring(0, 3);
+        console.log(withSubstring); // <== Don: rteurns string neetween first and last index
+
+
+        // String .substr() method
+        let withSubstr = message3.substr(2, 3);
+        console.log(withSubstr); // <== n't: rteurns the second number of characters from the first index
+
+
+        // String .startsWith() method
+        const str = 'To be, or not to be, that is the question.';
+        console.log(str.startsWith('To be')); // true
+        console.log(str.startsWith('not to be')); // false
+        console.log(str.startsWith('not to be', 10)); // true
+
+
+        // String .endsWith() method
+        console.log(str.endsWith('question.')); // true
+        console.log(str.endsWith('to be')); // false
+        console.log(str.endsWith('to be', 19)); // true
+
+
+        // String .includes() method
+        console.log(str.includes('to be')); // true
+        console.log(str.includes('question')); // true
+        console.log(str.includes('nonexistent')); // false
+        console.log(str.includes('To be', 1)); // false
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Declaration
+        const drinks = ['Agua', 'Coca-cola', 'Aquarius', 'Fanta', 'Cacaolat', 'Jagger', 'Red Bull', 'Cervemocho']
+        console.log('Array inicial:', drinks)
+
+        // Access
+        console.log('La primera bebida es', drinks[0])
+        console.log('La segunda bebida es', drinks[1])
+
+        // Update
+        drinks[1] = 'Pepsi'
+        console.log('Ahora la segunda bebida es', drinks[1])
+
+        // Length
+        console.log(`Tenemos un total de ${drinks.length} bebidas`)
+
+        // Adding values (last) ---- imperative
+        drinks[drinks.length] = 'Choco Bailyes'
+        console.log('Array extendido:', drinks)
+
+        // Adding values (last) ---- declarative
+        drinks.push('Nestea', 'Monster')
+        console.log('Array extendido:', drinks)
+
+        // Adding values (first)
+        drinks.unshift('Zumo')
+        console.log('Ahora las bebidas son:', drinks)
+
+        // Removing values (last)
+        drinks.pop()
+        console.log('Ahora las bebidas son:', drinks)
+
+        // Removing values (several)
+        drinks.splice(1, 3)         // from index one, remove 3 items
+        console.log('Ahora las bebidas son:', drinks)
+
+
+
+
+        // Split text into array
+        const string = 'Lorem ipsum dolor sit amet'
+        const words = string.split(' ')
+        console.log('Cada una de las palabras son:', words)
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

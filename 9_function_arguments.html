@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Declaration with parameters
+        function greetStudent(name, lastName) {
+            console.log(`¡Hola ${name} ${lastName}!`)
+        }
+
+
+        // Invokation with arguments
+        greetStudent('Miguel', 'Delgado')
+        greetStudent('Iñigo', 'M')
+        greetStudent('Inés', 'García')
+        greetStudent('Sara')
+
+
+
+
+
+        // Default value parameters
+        function printBookingDetails(name, date, roomType, price, discount = 0) {
+            const totalPrice = price - discount
+            const text = `${name}, su reserva para el día ${date} (hab. ${roomType}) está confirmada. Precio: ${totalPrice}€`
+            console.log(text)
+        }
+
+        printBookingDetails('Nat Canales', '11/11/2021', 'individual', 526)
+        printBookingDetails('Patri Escudero', '11/11/2021', 'individual', 526, 20)
+
+
+
+    </script>
+</body>
+
+</html>

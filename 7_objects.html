@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        const person = {
+            name: 'German',
+            lastName: 'Alvarez',
+            celiac: false,
+            address: {
+                street: 'García Luna',
+                neighbourhood: 'Prospe',
+                postalCode: 28002
+            },
+            hobbies: ['sky', 'coding', 'beer', 'rave'],
+            age: 35,
+            height: 1.7
+        }
+
+
+        // Access (getter)
+        console.log(`Me llamo ${person.name} ${person['lastName']} y vivo en ${person.address.neighbourhood}`)
+
+        console.log('Mis hobbies son:')
+        for (let i = 0; i < person.hobbies.length; i++) {
+            console.log(`Me gusta: ${person.hobbies[i]}`)
+        }
+
+        // Access (setter)
+        person.age = 36
+        console.log('Ahora tengo', person.age, 'años... D:')
+
+
+        // Object extension
+        person.weight = 80
+        console.log('Ahora peso', person.weight, 'kilos')
+
+        // Object keys
+        console.log('Las claves del objeto son:', Object.keys(person))
+
+        // Object values
+        console.log('Los valores del objeto son:', Object.values(person))
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        function printSomething() {
+            console.log('este es el objeto arguments:', arguments)
+            console.log('arguments length: ', arguments.length);
+            console.log('first arg: ', arguments[0]);
+            console.log('second arg: ', arguments[1]);
+        }
+
+        printSomething('hi', 'there')
+
+
+
+
+        function printArgs() {
+            for (let i = 0; i < arguments.length; i++) {
+                console.log('El argumento en posicion', i, 'es', arguments[i]);
+            }
+        }
+
+        printArgs('hey', 'there', 'ironhacker');
+        printArgs(1, 77, { name: 'milo' }, ['cat', 'dog'])
+
+    </script>
+</body>
+
+</html>
